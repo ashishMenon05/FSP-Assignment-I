@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System | College Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1><i class="fas fa-graduation-cap"></i> Online Examination System</h1>
+            <p>Computer Science Fundamentals - Midterm Examination</p>
+        </header>
+        
+        <!-- Timer Section -->
+        <div class="timer-section">
+            <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span id="timer">05:00</span>
+            </div>
+            <div class="exam-info">
+                <span><i class="fas fa-question-circle"></i> 5 Questions</span>
+                <span><i class="fas fa-check-circle"></i> <span id="answered-count">0</span>/5 Answered</span>
+            </div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <div class="progress-text" id="progress-text">0% Complete</div>
+        </div>
+        
+        <!-- Exam Instructions -->
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <ul>
+                <li>You have <strong>5 minutes</strong> to complete this exam.</li>
+                <li>Answer all 5 multiple-choice questions.</li>
+                <li>Each question has 4 options - select only one.</li>
+                <li>Click on an option to select your answer.</li>
+                <li>Click "Submit Exam" when finished to view your answers.</li>
+            </ul>
+        </div>
+        
+        <!-- Questions Container -->
+        <div class="questions-container" id="questions-container">
+            <!-- Questions will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="prev-btn" class="nav-btn">
+                <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button id="next-btn" class="nav-btn">
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="submit-section">
+            <button id="submit-btn" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Submit Exam
+            </button>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2023 College Examination System Demo | For Academic Purposes Only</p>
+            <p class="student-id">Student ID: CS2023-001</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
